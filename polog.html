@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            
+        }
+
+        header,
+        footer {
+            display: flex;
+            width: 100%;
+            min-height: 15%;
+            background: cyan;
+        }
+
+
+        .header-inner,
+        .footer-inner {
+            display: flex;
+            min-height: 35%;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 25px;
+        }
+
+        .footer-inner {
+            flex-direction: row-reverse;
+        }
+
+        .text-left {
+            flex-direction: row-reverse;
+            padding: 25px;
+            display: flex;
+            min-width: 10%;
+            max-height: 100%;
+            max-width: 25%;
+            border: 1px solid black;
+            background: white;
+        }
+
+        .text-right {
+            width: 50%;
+        }
+
+        .content {
+            min-height: 70%;
+            display: grid;
+            grid-template-columns: 1fr .5fr 1fr .5fr 2.5fr;
+            grid-template-rows: 100%;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+
+        }
+
+        .content > div {
+            outline: 1px solid black;
+        }
+
+        .content-section {
+            display: grid;
+            grid-template-columns: 1fr .5fr 1fr;
+            grid-template-rows: 1fr 4fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+
+        .content-section > div {
+            outline: 1px solid black;
+        }
+
+        .section-block1 {
+            grid-area: 1 / 1 / 2 / 4;
+            text-align: center;
+
+        }
+        section-block1 > p {
+            margin-top: 15px;
+        }
+        .section-block2 {
+
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        .section-block3 {
+            grid-area: 2 / 2 / 3 / 3; 
+        }
+
+        .section-block4 {
+            grid-area: 2 / 3 / 3 / 4; 
+        }
+        .content img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .menu {
+        background: lightgoldenrodyellow;
+        text-align: left; /* Вирівнювання тексту в лівому центрі */
+        padding: 20px;
+        }
+
+        .menu h3 {
+            margin-top : 40%;
+            padding: 0;
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #333; /* Чорний колір тексту */
+        }
+
+        .menu ul {
+            padding: 0;
+            list-style: none;
+            margin-top: 0px;
+            display: inline-block; /* Зробити меню блоком inline-block */
+        }
+
+        .menu li {
+            margin-bottom: 10px;
+        }
+
+        .menu li:last-child {
+            margin-bottom: 0; /* Виправляє відступ для останнього елемента списку */
+        }
+
+        .menu a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #333; /* Чорний колір тексту */
+            transition: color 0.3s; /* Плавна зміна кольору тексту при наведенні */
+        }
+
+        .menu li:hover {
+            font-weight: bold; /* Зміна товщини шрифту при наведенні курсору */
+            margin-left: 10px;
+
+        }
+
+        .menu li:hover a {
+            color: #007BFF; /* Зміна кольору тексту при наведенні курсору */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <span class="text-left">
+                Third Page
+            </span>
+
+            <span class="text-right">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, praesentium exercitationem eos nostrum aperiam, quisquam nihil sequi est nemo repellendus quos numquam. Iusto vel deserunt similique vero architecto pariatur. Ad.
+            </span>
+        </div>
+    </header>
+
+    <main class="block content">
+            <div class = "menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="index.html">Asap Rocky</a></li>
+                    <li><a href="carti.html">Playboi Carti</a></li> 
+                    <li><a href="polog.html"><b>Polo G</b></a></li>
+                    <li><a href="gherbo.html">G Herbo</a></li>
+                    <li><a href="kendrick.html">Kendrick Lamar</a></li>
+                </ul>
+            </div>
+            <div></div>
+            <div><img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2022%2F05%2Ftw-polo-g-teases-new-song-distraction-on-instagram.jpg?w=960&cbr=1&q=90&fit=max" alt="Polo G"></div>
+            <div></div>
+            <div class="content-section">
+                <div class="section-block1 menu"><p>I came a long way but I ain't as far as     I'm finna be
+                    I promise I'ma die a legend, I'ma make sure that you remember me</p></div>
+                <div class="section-block2"><img src="https://www.health-yogi.com/wp-content/uploads/2022/06/IMG_20220620_114040.jpg" alt="Polo G"></div>
+                <div class="section-block3">  </div>
+                <div class="section-block4"> 
+                   <map name="infographic">
+                          <area
+                            shape="poly"
+                            coords="130,147,200,107,254,219,130,228"
+                            href="https://uk.wikipedia.org/wiki/Gunna"
+                            target="_blank"
+                            alt="Gunna"
+                          />
+                          <area
+                            shape="poly"
+                            coords="130,147,130,228,6,219,59,107"
+                            href="https://ru.wikipedia.org/wiki/Polo_G"
+                            target="_blank"
+                            alt="Polo G"
+                          />
+                          
+                        </map>
+                        <img usemap="#infographic" src="https://imagez.tmz.com/image/5a/16by9/2023/01/20/5a31a32644014b4da1c5de6b4dc51a9c_xl.jpg" alt="MDN infographic" />
+                 </div>
+            </div>
+
+    </main>
+    
+    <footer>
+        <div class="footer-inner">
+            <span class="text-left">
+                Good Luck
+            </span>
+
+            <span class="text-right">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, praesentium exercitationem eos nostrum aperiam, quisquam nihil sequi est nemo repellendus quos numquam. Iusto vel deserunt similique vero architecto pariatur. Ad.
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
