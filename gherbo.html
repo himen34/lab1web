@@ -60,101 +60,108 @@
 
         .content {
             min-height: 70%;
-            display: grid;
-            grid-template-columns: 1fr .5fr 1fr .5fr 2.5fr;
-            grid-template-rows: 100%;
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
+			display: grid;
+			grid-template-columns: 1fr .5fr 1fr .5fr 2.5fr;
+			grid-template-rows: 100%;
+			grid-column-gap: 0px;
+			grid-row-gap: 0px;
 
-        }
+		}
 
-        .content > div {
-            outline: 1px solid black;
-        }
+		.content > div {
+			outline: 1px solid black;
+		}
 
-        .content-section {
-            display: grid;
-            grid-template-columns: 1fr .5fr 1fr;
-            grid-template-rows: 1fr 4fr;
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
-        }
+		.content-section {
+			display: grid;
+			grid-template-columns: 1fr .5fr 1fr;
+			grid-template-rows: 1fr 4fr;
+			grid-column-gap: 0px;
+			grid-row-gap: 0px;
+		}
 
-        .content-section > div {
-            outline: 1px solid black;
-        }
+		.content-section > div {
+			outline: 1px solid black;
+		}
 
         .section-block1 {
-            grid-area: 1 / 1 / 2 / 4;
-            text-align: center;
+            display: grid;
+			grid-area: 1 / 1 / 2 / 4;
+			text-align: center;
+            align-items: center
 
-        }
-        section-block1 > p {
-            margin-top: 15px;
-        }
-        .section-block2 {
+		}
+		section-block1 > p {
+			margin-top: 15px;
+		}
+		.section-block2 {
 
-            grid-area: 2 / 1 / 3 / 2;
-        }
+			grid-area: 2 / 1 / 3 / 2;
+		}
 
-        .section-block3 {
-            grid-area: 2 / 2 / 3 / 3; 
-        }
+		.section-block3 {
+			grid-area: 2 / 2 / 3 / 3; 
+		}
 
-        .section-block4 {
-            grid-area: 2 / 3 / 3 / 4; 
-        }
-        .content img {
-            width: 100%;
-            height: 100%;
-        }
+		.section-block4 {
+			grid-area: 2 / 3 / 3 / 4; 
+		}
+		.content img {
+			width: 100%;
+			height: 100%;
+		}
 
-        .menu {
-        background: lightgoldenrodyellow;
-        text-align: left; /* Вирівнювання тексту в лівому центрі */
-        padding: 20px;
-        }
+		.menu {
+		background: lightgoldenrodyellow;
+		text-align: left; /* Вирівнювання тексту в лівому центрі */
+		padding: 20px;
+		}
 
-        .menu h3 {
-            margin-top : 40%;
-            padding: 0;
-            font-size: 32px;
+		.menu h3 {
+			margin-top : 40%;
+			padding: 0;
+			font-size: 32px;
             margin-bottom: 10px;
-            color: #333; /* Чорний колір тексту */
-        }
+			color: #333; /* Чорний колір тексту */
+		}
 
-        .menu ul {
-            padding: 0;
-            list-style: none;
-            margin-top: 0px;
-            display: inline-block; /* Зробити меню блоком inline-block */
-        }
+		.menu ul {
+			padding: 0;
+			list-style: none;
+			margin-top: 0px;
+			display: inline-block; /* Зробити меню блоком inline-block */
+		}
 
-        .menu li {
-            margin-bottom: 10px;
-        }
+		.menu li {
+			margin-bottom: 10px;
+		}
 
-        .menu li:last-child {
-            margin-bottom: 0; /* Виправляє відступ для останнього елемента списку */
-        }
+		.menu li:last-child {
+			margin-bottom: 0; /* Виправляє відступ для останнього елемента списку */
+		}
 
-        .menu a {
-            text-decoration: none;
-            font-size: 18px;
-            color: #333; /* Чорний колір тексту */
-            transition: color 0.3s; /* Плавна зміна кольору тексту при наведенні */
-        }
+		.menu a {
+			text-decoration: none;
+			font-size: 18px;
+			color: #333; /* Чорний колір тексту */
+			transition: color 0.3s; /* Плавна зміна кольору тексту при наведенні */
+		}
 
-        .menu li:hover {
-            font-weight: bold; /* Зміна товщини шрифту при наведенні курсору */
+		.menu li:hover {
+			font-weight: bold; /* Зміна товщини шрифту при наведенні курсору */
             margin-left: 10px;
 
-        }
+		}
 
         .menu li:hover a {
-            color: #007BFF; /* Зміна кольору тексту при наведенні курсору */
+			color: #007BFF; /* Зміна кольору тексту при наведенні курсору */
         }
-
+        img {
+            
+           width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     </style>
 </head>
 <body>
